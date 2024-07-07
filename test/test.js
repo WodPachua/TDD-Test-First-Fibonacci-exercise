@@ -10,6 +10,10 @@ describe("Finding number in Fibonacci Series", function () {
     assert.equal(fibonacci(1), 1);
     assert.equal(fibonacci(2), 1);
   });
+
+  it("0th number in series should be '0'", function () {
+    assert.equal(fibonacci(0), 0);
+  });
 });
 
 // PAIR PARTNER

@@ -3,10 +3,14 @@ export function fibonacci(numIndex) {
   let current = 1;
   let next;
 
-  for (let index = 1; index < numIndex; index++) {
-    next = previous + current;
-    previous = current;
-    current = next;
+  if (numIndex > 0) {
+    for (let index = 1; index < numIndex; index++) {
+      next = previous + current;
+      previous = current;
+      current = next;
+    }
+  } else {
+    return 0;
   }
 
   return current;
