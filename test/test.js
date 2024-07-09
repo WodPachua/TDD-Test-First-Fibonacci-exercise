@@ -6,8 +6,11 @@ describe("Finding number in Fibonacci Series", function () {
     assert.equal(fibonacci(4), 3);
   });
 
-  it("1st and 2nd number in series should be '1'", function () {
+  it("1st number in series should be '1'", function () {
     assert.equal(fibonacci(1), 1);
+  });
+
+  it("2nd number in series should be '1'", function () {
     assert.equal(fibonacci(2), 1);
   });
 
